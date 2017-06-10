@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view wx:for="{{array}}">
+  {{index}} : {{item.message}} : {{item.greeting}}</view>
+  <view class="cta">
+    <button bindtap="hitMe">Button {{number}}</button>
+  </view>
+  <view bindtap="bindViewTap" class=""></view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto.en}}</text>
+  </view>
+</view>
